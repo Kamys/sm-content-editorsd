@@ -3,17 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <title>Test</title>
+    <script src="dist/bundle.js"></script>
 </head>
 <body>
-    <div>
+    <div id="draggable">
         Hello world!! This example text.
     </div>
     <div class="tool-bar">
         <div class="tool-bar__button-list">
-            <button type="button" class="btn btn-default" aria-label="Left Align">
-                <span class="glyphicon glyphicon-align-left" aria-hidden="true"></span>
-            </button>
+            <button type="button" class="btn btn-primary">Primary</button>
+            <button type="button" class="btn btn-primary">Primary</button>
+            <button type="button" class="btn btn-primary">Primary</button>
         </div>
     </div>
 </body>
+<script>
+    $('#draggable').draggable();
+</script>
 </html>
