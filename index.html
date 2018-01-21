@@ -1,23 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link rel="stylesheet" type="text/css" href="common.blocks/tool-bar/tool-bar.css"/>
     <meta charset="UTF-8">
     <title>Test</title>
     <script src="dist/bundle.js"></script>
 </head>
 <body>
-    <div id="draggable">
-        Hello world!! This example text.
+<div id="draggable">
+    Hello world!! This example text.
+</div>
+<div class="tool-bar tool-bar_shadow">
+    <div class="row tool-bar__button-list">
+
     </div>
-    <div class="tool-bar">
-        <div class="tool-bar__button-list">
-            <button type="button" class="btn btn-primary">Primary</button>
-            <button type="button" class="btn btn-primary">Primary</button>
-            <button type="button" class="btn btn-primary">Primary</button>
-        </div>
-    </div>
+</div>
 </body>
 <script>
-    $('#draggable').draggable();
+    let $tool = $('.tool-bar');
+    $tool.draggable();
+    $tool.resizable({
+        maxHeight: 400,
+        maxWidth: 400,
+        minHeight: 100,
+        minWidth: 100
+    });
+    let $buttonList = $('.tool-bar__button-list');
+
+    function createButtone() {
+        return `
+        <div class="col-sm-12 col-md-4 col-4 mt-1 ml-1">
+            <button type="button" class="btn btn-default" aria-label="Left Align">
+                <span class="glyphicon glyphicon-align-left" aria-hidden="true"></span>
+            </button>
+        </div>`;
+    }
+
+    $buttonList.append(createButtone());
+    $buttonList.append(createButtone());
+    $buttonList.append(createButtone());
+    $buttonList.append(createButtone());
 </script>
 </html>
