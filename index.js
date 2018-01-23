@@ -18,8 +18,8 @@ let toolBar = new ToolPanel();
 toolBar.init();
 let $blobe = $(`<i class="fa fa-bold fa-fw"></i>`);
 toolBar.addButton($blobe);
-toolBar.addButton($(`<i class="fa fa-camera-retro fa-fw"></i>`));
-toolBar.addButton($(`<i class="fa fa-camera-retro fa-fw"></i>`));
+toolBar.addButton($(`<i class="fa fa-align-center fa-fw"></i>`));
+toolBar.addButton($(`<i class="fa fa-align-left fa-fw"></i>`));
+toolBar.addButton($(`<i class="fa fa-align-right fa-fw"></i>`));
 
-CssHelper.extractCSSParameters();
-console.log(cssText);
+//CssHelper.extractCSSParameters();
