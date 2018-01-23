@@ -1,4 +1,4 @@
-function ToolBar(){
+function ToolPanel(){
 	let $buttonList = $('.tool-bar__button-list');
 
 	this.init = function (){
@@ -21,4 +21,4 @@ function ToolBar(){
 	}
 }
 
-module.exports = ToolBar;
+module.exports = ToolPanel;
