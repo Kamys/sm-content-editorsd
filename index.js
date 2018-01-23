@@ -3,14 +3,14 @@
 window.$ = window.jQuery = require("jquery");
 require("jquery-ui-bundle/jquery-ui.min");
 require("bootstrap/dist/js/bootstrap.bundle.min");
-let ToolPanel = require("./src/common.blocks/tool-bar/tool-bar");
+let ToolPanel = require("./src/common.blocks/tool-bar/tool-panel");
 let CssHelper = require("./src/help/CssHelper");
 
 
 /* Style */
 require("bootstrap/dist/css/bootstrap.min.css");
 require("jquery-ui-bundle/jquery-ui.css");
-require("./src/common.blocks/tool-bar/tool-bar.css");
+require("./src/common.blocks/tool-bar/tool-panel.css");
 require("./node_modules/font-awesome/css/font-awesome.min.css");
 require("./node_modules/font-awesome/fonts/fontawesome-webfont.svg");
 

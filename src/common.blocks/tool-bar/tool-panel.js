@@ -2,7 +2,7 @@ function ToolPanel(){
 	let $buttonList = $('.tool-bar__button-list');
 
 	this.init = function (){
-		let $tool = $('.tool-bar');
+		let $tool = $('.tool-panel');
 		$tool.draggable();
 		$tool.resizable({
 			minHeight: 70,
