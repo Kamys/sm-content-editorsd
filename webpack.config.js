@@ -24,5 +24,10 @@ module.exports = {
 				loader: 'url-loader'
 			}
 		]
-	}
+	},
+	watchOptions: {
+		aggregateTimeout: 1000,
+		poll: 1000
+	},
+	devtool: "source-map"
 };
