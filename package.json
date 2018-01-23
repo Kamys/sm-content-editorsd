@@ -1,6 +1,7 @@
 {
   "dependencies": {
     "bootstrap": "^4.0.0",
+    "font-awesome": "https://github.com/FortAwesome/Font-Awesome",
     "jquery": "^3.3.1",
     "jquery-ui-bundle": "^1.12.1"
   },

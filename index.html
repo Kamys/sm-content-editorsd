@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link rel="stylesheet" type="text/css" href="common.blocks/tool-bar/tool-bar.css"/>
     <meta charset="UTF-8">
     <title>Test</title>
     <script src="dist/bundle.js"></script>
@@ -20,18 +19,16 @@
     let $tool = $('.tool-bar');
     $tool.draggable();
     $tool.resizable({
-        maxHeight: 400,
-        maxWidth: 400,
         minHeight: 100,
-        minWidth: 100
+        minWidth: 50
     });
     let $buttonList = $('.tool-bar__button-list');
 
     function createButtone() {
         return `
-        <div class="col-sm-12 col-md-4 col-4 mt-1 ml-1">
+        <div class="col-sm-12 col-md-4 col-lg-1 mt-1 ml-1">
             <button type="button" class="btn btn-default" aria-label="Left Align">
-                <span class="glyphicon glyphicon-align-left" aria-hidden="true"></span>
+                <i class="fa fa-camera-retro fa-fw"></i>
             </button>
         </div>`;
     }
