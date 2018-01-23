@@ -1,7 +1,7 @@
-function ToolPanel(){
-	let $buttonList = $('.tool-bar__button-list');
+function ToolPanel() {
+	let $buttonList = $('.tool-panel__button-list');
 
-	this.init = function (){
+	this.init = function () {
 		let $tool = $('.tool-panel');
 		$tool.draggable();
 		$tool.resizable({
