@@ -10,27 +10,24 @@
     Hello world!! This example text.
 </div>
 <div class="tool-bar tool-bar_shadow">
-    <div class="row tool-bar__button-list">
+    <div class="tool-bar__button-list">
 
     </div>
 </div>
 </body>
 <script>
-    let $tool = $('.tool-bar');
-    $tool.draggable();
+    let $tool = $('.tool-bar');$tool.draggable();
     $tool.resizable({
-        minHeight: 100,
-        minWidth: 50
+        minHeight: 55,
+        minWidth: 55
     });
     let $buttonList = $('.tool-bar__button-list');
 
     function createButtone() {
         return `
-        <div class="col-sm-12 col-md-4 col-lg-1 mt-1 ml-1">
-            <button type="button" class="btn btn-default" aria-label="Left Align">
+            <button type="button" class="btn btn-default mt-1" aria-label="Left Align">
                 <i class="fa fa-camera-retro fa-fw"></i>
-            </button>
-        </div>`;
+            </button>`;
     }
 
     $buttonList.append(createButtone());
