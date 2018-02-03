@@ -16,10 +16,8 @@ require("./node_modules/font-awesome/fonts/fontawesome-webfont.svg");
 
 let toolBar = new ToolPanel();
 toolBar.init();
-let $blobe = $(`<i class="fa fa-bold fa-fw"></i>`);
-toolBar.addButton($blobe);
+let $bold = $(`<i class="fa fa-bold fa-fw"></i>`);
+toolBar.addButton($bold);
 toolBar.addButton($(`<i class="fa fa-align-center fa-fw"></i>`));
 toolBar.addButton($(`<i class="fa fa-align-left fa-fw"></i>`));
 toolBar.addButton($(`<i class="fa fa-align-right fa-fw"></i>`));
-
-//CssHelper.extractCSSParameters();

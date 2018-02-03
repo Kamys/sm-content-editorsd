@@ -1,4 +1,4 @@
-.tool-panel {
+.tool-bar {
     width: 200px;
     height: 300px;
     background-color: #2f3747;
@@ -6,7 +6,6 @@
     border-radius: 20px;
 }
 
-.tool-panel_shadow {
+.tool-bar_shadow {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-    padding: 10px;
 }

@@ -1,8 +1,8 @@
 function ToolPanel() {
-	let $buttonList = $('.tool-panel__button-list');
+	let $buttonList = $('.tool-bar__button-list');
 
 	this.init = function () {
-		let $tool = $('.tool-panel');
+		let $tool = $('.tool-bar');
 		$tool.draggable();
 		$tool.resizable({
 			minHeight: 70,
