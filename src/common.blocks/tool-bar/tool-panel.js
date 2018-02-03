@@ -10,10 +10,12 @@ function ToolPanel() {
 		});
 	};
 
-	this.addButton = function ($icon) {
+	this.addButton = function ($icon, onClick) {
 		let $button = createButton();
 		$button.append($icon);
+		$button.on('click', onClick);
 		$buttonList.append($button);
+		return $button;
 	};
 
 	function createButton() {

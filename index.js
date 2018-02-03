@@ -14,10 +14,38 @@ require("./src/common.blocks/tool-bar/tool-panel.css");
 require("./node_modules/font-awesome/css/font-awesome.min.css");
 require("./node_modules/font-awesome/fonts/fontawesome-webfont.svg");
 
+let listButton = [
+    {
+        name: 'bold',
+        click: () => execCommand('bold'),
+        iconHTML: '<i class="fa fa-bold fa-fw"></i>'
+    },
+    {
+        name: 'left',
+        click: () => execCommand('JustifyLeft'),
+        iconHTML: '<i class="fa fa-align-left fa-fw"></i>'
+    },
+    {
+        name: 'center',
+        click: () => execCommand('JustifyCenter'),
+        iconHTML: '<i class="fa fa-align-center fa-fw"></i>'
+    },
+    {
+        name: 'right',
+        click: () => execCommand('JustifyRight'),
+        iconHTML: '<i class="fa fa-align-right fa-fw"></i>'
+    },
+];
+
+function execCommand(command) {
+    iframe.contentWindow.document.execCommand(command, false, null)
+}
+
+let iframe = $('#draggable').get(0);
+iframe.contentWindow.document.designMode = 'On';
+
 let toolBar = new ToolPanel();
 toolBar.init();
-let $bold = $(`<i class="fa fa-bold fa-fw"></i>`);
-toolBar.addButton($bold);
-toolBar.addButton($(`<i class="fa fa-align-center fa-fw"></i>`));
-toolBar.addButton($(`<i class="fa fa-align-left fa-fw"></i>`));
-toolBar.addButton($(`<i class="fa fa-align-right fa-fw"></i>`));
+listButton.forEach(btnInfo => {
+    toolBar.addButton($(btnInfo.iconHTML), btnInfo.click)
+});
