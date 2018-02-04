@@ -19,7 +19,7 @@ function ToolPanel() {
 	};
 
 	function createButton() {
-		return $(`<button type="button" class="btn tool-bar__btn_shadow btn-secondary btn-sm mt-1 ml-1"/>`);
+		return $(`<button type="button"  class="btn tool-bar__btn_shadow btn-secondary btn-sm mt-1 ml-1"/>`);
 	}
 }
 

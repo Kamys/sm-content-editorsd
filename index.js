@@ -17,38 +17,53 @@ let listButton = [
     {
         name: 'bold',
         click: () => execCommand('bold'),
-        iconHTML: '<i class="material-icons mt-1">format_bold</i>'
+        iconHTML: '<i class="fas fa-bold fa-fw"></i>'
     },
     {
         name: 'left',
         click: () => execCommand('JustifyLeft'),
-        iconHTML: '<i class="material-icons">format_align_left</i>'
+        iconHTML: '<i class="fas fa-align-left fa-fw"></i>'
     },
     {
         name: 'center',
         click: () => execCommand('JustifyCenter'),
-        iconHTML: '<i class="material-icons">format_align_center</i>'
+        iconHTML: '<i class="fas fa-align-center fa-fw"></i>'
     },
     {
         name: 'right',
         click: () => execCommand('JustifyRight'),
-        iconHTML: '<i class="material-icons">format_align_right</i>'
+        iconHTML: '<i class="fas fa-align-right fa-fw"></i>'
     },
     {
         name: 'list-ul',
         click: () => execCommand('InsertUnorderedList'),
-        iconHTML: '<i class="material-icons">format_list_bulleted</i>'
+        iconHTML: '<i class="fas fa-list-ul fa-fw"></i>'
     },
     {
         name: 'list-ol',
         click: () => execCommand('insertOrderedList'),
-        iconHTML: '<i class="material-icons">format_list_numbered</i>'
+        iconHTML: '<i class="fas fa-list-ol fa-fw"></i>'
     },
     {
         name: 'italic',
         click: () => execCommand('Italic'),
-        iconHTML: '<i class="material-icons">format_italic</i>'
+        iconHTML: '<i class="fas fa-italic fa-fw"></i>'
     },
+    {
+        name: 'format_clear',
+        click: () => execCommand('RemoveFormat'),
+        iconHTML: '<i class="fas fa-trash-alt fa-fw"></i>'
+    },
+    {
+        name: 'format_underlined',
+        click: () => execCommand('Underline'),
+        iconHTML: '<i class="fas fa-underline fa-fw"></i>'
+    },
+    {
+        name: 'unlink',
+        click: () => execCommand('Unlink'),
+        iconHTML: '<i class="fas fa-unlink fa-fw"></i>'
+    }
 ];
 
 function execCommand(command) {
