@@ -1,14 +1,14 @@
 function ToolPanel() {
-	let $buttonList = $('.tool-bar__button-list');
+    let $buttonList = $('.tool-bar__button-list');
 
-	this.init = function () {
-		let $tool = $('.tool-bar');
-		$tool.draggable();
-		$tool.resizable({
-			minHeight: 70,
-			minWidth: 70
-		});
-	};
+    this.init = function () {
+        let $tool = $('.tool-bar');
+        $tool.draggable();
+        $tool.resizable({
+            minHeight: 70,
+            minWidth: 70
+        });
+    };
 
 	this.addButton = function ($icon, onClick) {
 		let $button = createButton();
@@ -19,7 +19,7 @@ function ToolPanel() {
 	};
 
 	function createButton() {
-		return $(`<button type="button" class="btn tool-bar__btn btn-secondary mt-1 ml-1"/>`);
+		return $(`<button type="button" class="btn tool-bar__btn_shadow btn-secondary btn-sm mt-1 ml-1"/>`);
 	}
 }
 

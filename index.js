@@ -11,29 +11,43 @@ let CssHelper = require("./src/help/CssHelper");
 require("bootstrap/dist/css/bootstrap.min.css");
 require("jquery-ui-bundle/jquery-ui.css");
 require("./src/common.blocks/tool-bar/tool-panel.css");
-require("./node_modules/font-awesome/css/font-awesome.min.css");
-require("./node_modules/font-awesome/fonts/fontawesome-webfont.svg");
+require("material-design-icons/iconfont/material-icons.css");
 
 let listButton = [
     {
         name: 'bold',
         click: () => execCommand('bold'),
-        iconHTML: '<i class="fa fa-bold fa-fw"></i>'
+        iconHTML: '<i class="material-icons mt-1">format_bold</i>'
     },
     {
         name: 'left',
         click: () => execCommand('JustifyLeft'),
-        iconHTML: '<i class="fa fa-align-left fa-fw"></i>'
+        iconHTML: '<i class="material-icons">format_align_left</i>'
     },
     {
         name: 'center',
         click: () => execCommand('JustifyCenter'),
-        iconHTML: '<i class="fa fa-align-center fa-fw"></i>'
+        iconHTML: '<i class="material-icons">format_align_center</i>'
     },
     {
         name: 'right',
         click: () => execCommand('JustifyRight'),
-        iconHTML: '<i class="fa fa-align-right fa-fw"></i>'
+        iconHTML: '<i class="material-icons">format_align_right</i>'
+    },
+    {
+        name: 'list-ul',
+        click: () => execCommand('InsertUnorderedList'),
+        iconHTML: '<i class="material-icons">format_list_bulleted</i>'
+    },
+    {
+        name: 'list-ol',
+        click: () => execCommand('insertOrderedList'),
+        iconHTML: '<i class="material-icons">format_list_numbered</i>'
+    },
+    {
+        name: 'italic',
+        click: () => execCommand('Italic'),
+        iconHTML: '<i class="material-icons">format_italic</i>'
     },
 ];
 
